@@ -1,3 +1,8 @@
+/* Name: Tommy Cao
+   Date: 11/10/19
+   Company: GEVH
+   Description: Responsive Portfolio Website - Sass Workflow */
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -24,7 +29,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.97;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -160,8 +165,9 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: 'bioimage bio bio bio'
+ 'job1 job2 job3 job4';
+  grid-template-columns: repeat(4, 1fr); }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
@@ -176,6 +182,8 @@ main {
     grid-area: job2; }
   .about-info .job-3 {
     grid-area: job3; }
+  .about-info .job-4 {
+    grid-area: job4; }  
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
@@ -238,7 +246,7 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -271,7 +279,12 @@ main {
       width: 150px;
       height: 150px; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: 'bioimage'
+ 'bio'
+ 'job1'
+ 'job2'
+ 'job3'
+ 'job4';
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
